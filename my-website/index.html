@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <style>
+        li a {
+          text-decoration: none;
+          position: relative;
+          transition: border-bottom 0.3s ease; 
+        }
+
+        li a:after {
+          content: "";
+          display: block;
+          width: 100%;
+          border-bottom: 3px solid transparent; 
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          border-radius: 5px;
+        }
+
+        li a:hover:after {
+          border-bottom: 3px solid #838080; 
+        }
+      </style>
+      <div class="logo">Ayşenur Kurt</div>
+      <nav>
+        <ul>
+          <li><a href="#Anasayfa">Ana Sayfa</a></li>
+          <li><a href="#Yeteneklerim">Yeteneklerim</a></li>
+          <li><a href="#Projelerim">Projelerim</a></li>
+          <li><a href="#Hakkımda">Hakkımda</a></li>
+          <li><a href="#İletişim">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="Anasayfa">
+      <div class="hero">
+        <div class="hero-content">
+          <p>
+            Merhaba, ben Ayşenur Kurt. Süleyman Demirel Üniversitesi'nde
+            Bilgisayar Mühendisliği öğrencisiyim ve bu alandaki tutkum ve bilgi
+            birikimimle kendimi sürekli geliştirmekteyim. C, C#, Go gibi
+            programlama dillerinde güçlüyüm ve bu dillerle çeşitli projeler
+            geliştirdim. Aynı zamanda HTML ve CSS ile web tasarımında da deneyim
+            sahibiyim, estetik ve kullanıcı dostu web siteleri oluşturmak
+            konusunda tutkulu biriyim. Daha önce çalışma ve staj deneyimleri
+            sayesinde ekiplerle etkili iletişim kurma, problem çözme ve proje
+            yönetimi becerileri kazandım. Teknoloji dünyasının hızla değişen
+            doğasına ayak uydurmayı ve yeni beceriler edinmeyi severim.
+            İşbirliği, öğrenmeye açıklık ve yenilikçi düşünme benim için
+            önemlidir. Bilgisayar mühendisliği alanındaki tutkum ve
+            deneyimlerim, teknolojiye olan bağlılığımı her geçen gün daha da
+            güçlendiriyor.
+          </p>
+        </div>
+        <button id="view-projects-button" >Portfolyo'ya Git</button>
+      </div>
+    </section>
+    <section id="Yeteneklerim">
+      <div class="portfolio-images">
+        <h2>Yeteneklerim</h2>
+
+        <div class="separator"></div>
+
+        <div class="skills">
+        
+          <div class="box">
+              <h3>C#</h3>
+              <div class="perecent">
+                  <div style="width: 80%;"></div>
+              </div>
+          </div>
+          <div class="box">
+              <h3>CSS</h3>
+              <div class="perecent">
+                  <div style="width: 72%;"></div>
+              </div>
+          </div>
+          <div class="box">
+              <h3>HTML</h3>
+              <div class="perecent">
+                  <div style="width: 85%;"></div>
+              </div>
+          </div>
+          <div class="box">
+              <h3>C</h3>
+              <div class="perecent">
+                  <div style="width: 90%;"></div>
+              </div>
+            </div>
+              <div class="box">
+                <h3>GoLang</h3>
+                <div class="perecent">
+                    <div style="width: 45%;"></div>
+                </div>
+          </div>
+      </div>
+ 
+    </section>
+    <section id="Projelerim">
+      <div class="portfolio-images">
+        <h2>Projelerim</h2>
+        <div class="separator"></div>
+
+        <div class="image">
+          <img src="restoran.png" alt="Proje 1 Resmi" />
+          <h3>Restoran Web Sitesi Projesi</h3>
+       
+          <a href="proje1-detay.html">Daha Fazla Bilgi</a>
+        </div>
+
+        <div class="image">
+          <img src="goweb.png" alt="Proje 2 Resmi" />
+          <h3>Öğrenci Giriş Otomasyon Projesi</h3>
+        
+          <a href="proje2-detay.html">Daha Fazla Bilgi</a>
+        </div>
+
+        <div class="image">
+          <img src="Ekran Görüntüsü (57).png" alt="Proje 3 Resmi" />
+          <h3>Kafe Otomasyon Projesi</h3>
+          
+          <a href="proje3-detay.html">Daha Fazla Bilgi</a>
+        </div>
+      </div>
+    </section>
+    <section id="Hakkımda">
+      <div class="slider-container">
+        <h2>Hakkımda</h2>
+        <div class="separator"></div>
+        <div class="slider">
+         
+          <div class="slide">
+            <img style="display: block; margin: auto;"  src="nur.jpg" width="600px" alt="Slayt 1" />
+            <h2>Ayşenur Kurt</h2>
+            <h4>Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği</h4>
+                
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="İletişim">
+      <div class="contact-container">
+        <h2>İletişim</h2>
+        <div class="separator"></div>
+        <div class="contact-form">
+          <form>
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">E-posta Adresiniz:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Gönder</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="social-media-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

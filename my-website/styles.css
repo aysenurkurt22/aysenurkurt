@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .skills .box {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin: 20px 10px; /* Önce üst, sonra yan boşluk */
+    padding: 30px;
+  }
+  
+  .skills .box h4 {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .skills .box .perecent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: antiquewhite;
+    font-size: 14px;
+  }
+  
+  .skills .box .perecent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #333;
+  }
+  
+  .hero {
+    background: url("https://e0.pxfuel.com/wallpapers/568/825/desktop-wallpaper-black-blue-black-and-light-blue.jpg") center/cover no-repeat fixed;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    height: 300px;
+  }
+  
+  h1 {
+    color: #ddcaca;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #ddcaca;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  #view-projects-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  
+  #view-projects-button:hover {
+    background-color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .portfolio-images {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .slider-container h2 {
+    text-align: center;
+  }
+  
+  .slider .slide img {
+    border-radius: 10px;
+  }
+  
+  .slider .slide h2 {
+    text-align: center;
+    color: #754b4b;
+  }
+  
+  .slider .slide h4 {
+    text-align: center;
+  }
+  
+  .separator {
+    border: 1px solid #474646;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .image {
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+    max-width: 800px;
+    height: auto;
+    position: relative;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+  
+  .project-container {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .project-container h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .project-container img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+  
+  .project-container a {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .project-container a:hover {
+    background-color: #555;
+  }
+  
+  .contact-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .contact-container h2 {
+    color: #333;
+  }
+  
+  .separator {
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+  }
+  
+  .contact-form form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-media-icons a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
